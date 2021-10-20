@@ -1,0 +1,76 @@
+<html>
+    <head>
+       <style>
+           #header-img {
+               width: 300px;
+           }
+           body {
+                 background-color: lightblue;
+                }
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
+}
+        .flex-container {
+            display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+        }
+       </style>
+        
+    </head>
+
+    <body>
+        <header id='header'>
+            <nav id='nav-bar'>
+                <a class='nav-link' href='#about'>About</a>
+                <a class='nav-link' href='#shop'>Shop</a>
+                <a class='nav-link' href='#learn-more'>Learn More</a>
+            </nav>
+            <img id='header-img' src='https://scontent.fsan1-1.fna.fbcdn.net/v/t39.30808-6/217396325_311302413755866_5181091851933884423_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_ohc=mwmELn-ZwiQAX_65Ch2&_nc_ht=scontent.fsan1-1.fna&oh=7d408e6bcc4e8899f0fb0e99b6d3a30f&oe=61738D7F'/>
+        </header>
+        <section id='about'>
+
+        </section>
+        <section id='shop'>
+
+            <form id='form' action=' https://www.freecodecamp.com/email-submit'>
+                <input id='email' type='email' placeholder='email' name='email'></input>
+                <input id='submit' type='submit'></input>
+            </form>
+
+        </section>
+        <section id='learn-more'>
+
+            <iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/MXyNafN45lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section>
+        <h1 id='header'>Provecho Baked Goods</h1>
+        
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+
+</html>
